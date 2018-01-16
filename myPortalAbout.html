@@ -1,0 +1,70 @@
+<html>
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+<meta charset="utf-8">
+<link rel="stylesheet" type="text/css" href="myPortalCSS.css">
+<script type="text/javascript" src="javascrpt.js"></script>
+<script type="text/javascript" src="jquery-3.2.1.min.js"></script>
+
+<script type="text/javascript">
+	
+function goBack()
+{
+  window.history.back();
+
+}
+function goTo()
+{
+  window.history.go(-1);
+}
+function goForward()
+{
+  window.history.forward();
+}
+
+</script>
+
+
+</head>
+<body><form>
+<p style="margin-left: 21cm;"><button onclick="goBack()">Go Back</button>
+<button onclick="goForward()">Go Forward</button>
+<button onclick="goTo()">Go To</button>
+<h1>
+<div>
+	<table>
+		<tr><td><a href="myPortalAbout.html"><input type="button" class="navmenu" value="About ME :)"> </a></td></tr>
+		<tr><td><a href="myPortalHobies.html"><input type="button" class="navmenu"  value="Hobbies"> </a></td></tr>
+		<tr><td><a href="myPortalFavourites.html"><input type="button" class="navmenu"  value="Favourites"> </a></td></tr>
+		<tr><td><a href="myPortalContact.html"><input type="button" class="navmenu"  value="Contact ME:)"> </a></td></tr>
+		<tr><td><input type="color" class="navmenu"  id="click"> </a></td></tr>
+		<tr><td><input type="button" class="navmenu"  value="Change Color" id="back"> </a></td></tr>
+	</table>
+</div>
+
+<div id="vid2">
+	I can't change the direction of the wind, but I can adjust my sails to always reach my destination.
+
+</div>
+
+</h1>
+
+
+
+</form>
+<script type="text/javascript">
+	$(document).ready(function(){
+		$("#back").click(function()
+		{
+			alert("Now the font changes to the color you selected..");
+			var color=document.getElementById("click").value;
+			$("*").css("color",color);
+			
+		});
+	});
+
+	
+
+</script>
+</body>
+</html>

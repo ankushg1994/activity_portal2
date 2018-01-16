@@ -1,0 +1,33 @@
+function goBack()
+{
+  window.history.back();
+}
+function goTo()
+{
+  window.history.go(-1);
+}
+function goForward()
+{
+  window.history.forward();
+}
+
+function validate()
+{
+  var name=document.getElementById("ename").value;
+  var password=document.getElementById("pwd").value;
+  var logname=document.getElementById("guest").value;
+
+  if(name=='shijina' && password=='portal')
+  { alert("Hi "+logname +"... I welcome you to my Portal.. :)");
+    window.location="myPortalMenu.html";}
+    else
+      {alert("Please enter valid credentials...");
+    window.location="myPortal.html";}
+
+}
+
+function signup()
+{
+  alert("Succesfully signed up..");
+    window.location="myPortalMenu.html";
+}

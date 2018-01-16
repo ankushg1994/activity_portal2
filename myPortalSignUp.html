@@ -1,0 +1,70 @@
+<html>
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+<meta charset="utf-8">
+<link rel="stylesheet" type="text/css" href="myPortalCSS.css">
+<script type="text/javascript" src="javascrpt.js"></script>
+<script type="text/javascript">
+	
+function goBack()
+{
+  window.history.back();
+}
+function goTo()
+{
+  window.history.go(-1);
+}
+function goForward()
+{
+  window.history.forward();
+}
+
+</script>
+
+</head>
+
+<body>
+<button onclick="goBack()">Go Back</button>
+<button onclick="goForward()">Go Forward</button>
+<button onclick="goTo()">Go To</button><br>
+<div id="Box">
+	<form>
+<table>
+<tr>
+<th>NAME:</th>
+<td height="50"><input type="text" id="name"></td>
+</tr>
+<tr>
+<th>EMAIL ID:</th>
+<td height="50"><input type="email" id="email" id=""></td>
+</tr>
+<tr>
+<th>EMP ID:</th>
+<td height="50"><input type="number" id="emp"></td>
+</tr>
+<tr>
+<th>MOBILE:</th>
+<td height="50"><input type="number" id="mob"></td>
+</tr>
+<tr>
+<th>DATE OF BIRTH:</th>
+<td height="50"><input type="date" id="dob"></td>
+</tr>
+<tr>
+<th>USERNAME:</th>
+<td height="50"><input type="text" id="uname"></td>
+</tr>
+<tr>
+<th>PASSWORD:</th>
+<td height="50"><input type="password" id="pwd"></td>
+</tr>
+<tr>
+<td colspan="2" align="center">
+<!--<a href="myPortalMenu.html">-->
+	<input type="Submit" value="Submit" class="buttonstyle" onclick="check();"> </a></td>
+</tr>
+</table>
+</form>
+</div>
+</body>
+</html>

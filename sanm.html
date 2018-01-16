@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<script type="text/javascript" src="jquery-3.2.1.min.js"></script>
+	<title></title>
+</head>
+<body>
+	<input type="color" id="color">
+	<input type="submit" name="bt" onclick="colo();">
+	<script type="text/javascript">
+		function colo()
+		{
+		var color=document.getElementById("color").value;
+		console.log(color);
+
+		document.write(color);
+		//alert(color);
+	}
+	</script>
+
+
+	<input type="submit" name="bt" id="ss" value="click">
+	<script type="text/javascript">
+	$(document).ready(function(){
+		$("#ss").click(function()
+		{
+			alert("Hiiiii");
+		});
+	});
+
+</script>
+
+</body>
+</html>
